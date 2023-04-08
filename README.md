@@ -7,12 +7,10 @@
   $statement->execute();
   ```
   
-  
 ### read
   
-  
-  
+  ```javascript
   $sql = "";
   $statement = $pdo->query($sql);
   $allrows = $statement->fetchAll(PDO::FETCH_ASSOC); // through loop(we use foreach) we will get the single row
- 
+ ```

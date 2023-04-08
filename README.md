@@ -3,11 +3,11 @@
 ## pdo configaration
 
   ```
-  $host = 'localhost';
-  $db = 'login_registration_system';
-  $user = 'root';
+  $host     = 'localhost';
+  $database = 'login_registration_system';
+  $user     = 'root';
   $password = '';
-  $dsn = "mysql:host=$host;dbname=$db;charset=UTF8";
+  $dsn      = "mysql:host=$host;dbname=$db;charset=UTF8";
 
   try {
       $pdo = new PDO($dsn, $user, $password);

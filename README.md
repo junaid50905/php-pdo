@@ -2,11 +2,17 @@
 
 ### create
   
+  
+  
   $sql = "";
   $statement = $pdo->prepare($sql);
   $statement->execute();
   
+  
+  
 ### read
+  
+  
   
   $sql = "";
   $statement = $pdo->query($sql);

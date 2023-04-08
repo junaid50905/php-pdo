@@ -1,13 +1,11 @@
 # php-pdo
 
 ### create
-  
-  
-  
+  ```javascript
   $sql = "";
   $statement = $pdo->prepare($sql);
   $statement->execute();
-  
+  ```
   
   
 ### read

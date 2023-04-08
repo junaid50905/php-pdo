@@ -1,6 +1,6 @@
 # php-pdo
 
-## php configaration
+## pdo configaration
 
   ```
   $host = 'localhost';
@@ -20,6 +20,7 @@
   }
   ```
 
+## pdo CRUD
 
 ### create
 

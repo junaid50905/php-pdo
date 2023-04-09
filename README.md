@@ -23,8 +23,12 @@
 ```
 
 $statement = $pdo->prepare($sql) // prepare a sql command for query. prepare() method will not work without execute() method
+
 $statement = $pdo->query($sql)  // it works same as prepare. But it is less secure than prepare() method. It will work without execute()
+
 $allrows   = $statement->fetchAll(PDO::FETCH_ASSOC) // fetch all rows of a table FETCH_BOTH=fetch associative and indexed array both, FETCH_ASSOC= fetch associative array, FETCH_NUM= fetch indexed array, 
+
+$statemeent->rowcount() // to get number of rows affected by Query
 
 ```
 ## pdo CRUD

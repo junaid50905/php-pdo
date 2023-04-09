@@ -20,6 +20,13 @@
   }
   ```
 
+```
+
+$statement = $pdo->prepare($sql) // prepare a sql command for query
+$statement = $pdo->query($sql)  // it works same as prepare. But it is less secure than prepare() method
+$allrows   = $statement->fetchAll(PDO::FETCH_ASSOC) // fetch all rows of a table 
+
+```
 ## pdo CRUD
 
 ### create

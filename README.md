@@ -1,4 +1,4 @@
-# php-pdo
+# php-pdo(PHP Data Object)
 
 ## pdo configaration
 

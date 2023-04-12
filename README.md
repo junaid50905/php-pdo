@@ -47,4 +47,14 @@ $statemeent->rowcount() // to get number of rows affected by Query
   $sql = "";
   $statement = $pdo->query($sql);
   $allrows = $statement->fetchAll(PDO::FETCH_ASSOC); // through loop(we use foreach) we will get the single row
+  
+  // Here is an another way to fetch all rows of a table
+  // this is the best way to fetch
+  $fetch_all_rows_sql = "SELECT * FROM employees";
+  $statement = $pdo->prepare($fetch_all_rows_sql);
+  $statement->execute();
+  $all_rows = $statement->fetchAll(PDO::FETCH_ASSOC);  
+  
+  
+  
  ```

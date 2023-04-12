@@ -52,6 +52,7 @@ $statemeent->rowcount() // to get number of rows affected by Query
  
  
  // Here is an another way to fetch all rows of a table
+ 
  // this is the best way to fetch
  ```
   $fetch_all_rows_sql = "SELECT * FROM employees";

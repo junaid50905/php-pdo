@@ -66,7 +66,31 @@ $statemeent->rowcount() // to get number of rows affected by Query
  - $pdo-> prepare() : prepare a sql command : prepare($sql_command)
  - $statement-> execute() : prepare method will not work without execute method. when we call prepare method, we have to call execute method after prepare method.
  - $all_rows = statement-> fetchAll() : fetch all rows of a table
- - 
+ ##### bindParam() and bindValue() : bindParam and bindValue are same, we can use one of them
+ 
+ For a single variable
+ ```
+    $user_name = 'junaid';
+    $sql = "SELECT * FROM login_php WHERE username=:userName";    
+    $statement = $pdo->prepare($sql);
+    $statement->bindParam(':userName', $user_name, PDO::PARAM_STR);
+    $statement->execute();
+    $all_rows = $statement->fetchAll(PDO::FETCH_ASSOC);
+    
+    // we get all values those match the sql condition
+ ```
+ 
+ For multiple variable
+ ```
+     $user_name = 'junaid';
+    $user_email = 'test@gmail.com';
+    $sql = "SELECT * FROM login_php WHERE username=:userName AND email=:userEmail";    
+    $statement = $pdo->prepare($sql);
+    $statement->bindParam(':userName', $user_name, PDO::PARAM_STR);
+    $statement->bindParam(':userEmail', $user_email, PDO::PARAM_STR);
+    $statement->execute();
+    $all_rows = $statement->fetchAll(PDO::FETCH_ASSOC);
+ ```
  ## pdo crud in secure way
  
  #### read all rows

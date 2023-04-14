@@ -67,7 +67,11 @@ $statemeent->rowcount() // to get number of rows affected by Query
  
  #### read all rows
  ```
- 
+    $sql = "SELECT * FROM login_php";
+    $statement = $pdo->prepare($sql);
+    $statement->execute();
+    $all_rows = $statement->fetchAll();
+
  ```
  
  

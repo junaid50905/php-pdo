@@ -62,6 +62,15 @@ $statemeent->rowcount() // to get number of rows affected by Query
  
  ```
  
+ ---------------------------------------------------------------------------------------------------------
+ ## pdo crud in secure way
+ 
+ #### read all rows
+ ```
+ 
+ ```
+ 
+ 
  
  
  

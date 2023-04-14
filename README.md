@@ -95,6 +95,15 @@ $statemeent->rowcount() // to get number of rows affected by Query
     $statement->execute();
     $all_rows = $statement->fetchAll(PDO::FETCH_ASSOC);
  ```
+ #### execute([$param1, $param2,...]): it works like bindParam, where it binds multiple parameters
+ ```
+ $user_name = "nirob";
+    $user_email = "ni@rob.cpm";
+    $sql = "SELECT * FROM login_php WHERE username=? AND email=?";    
+    $statement = $pdo->prepare($sql);
+    $statement->execute([$user_name,$user_email]);
+    $row = $statement->fetchAll(PDO::FETCH_ASSOC);
+```
  ## pdo crud in secure way
  
  #### read all rows

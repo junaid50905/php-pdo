@@ -67,6 +67,10 @@ $statemeent->rowcount() // to get number of rows affected by Query
  - $statement-> execute() : prepare method will not work without execute method. when we call prepare method, we have to call execute method after prepare method.
  - $all_rows = statement-> fetchAll() : fetch all rows of a table
  ##### bindParam() and bindValue() : bindParam and bindValue are same, we can use one of them
+ bindParam(1,2,3): This method binds a PHP variable to a parameter in the prepared statement.
+ 1. name of the parameter in the SQL query
+ 2. Variable
+ 3. Data Type: PDO::PARAM_INT,  PDO::PARAM_STR
  
  For a single variable
  ```

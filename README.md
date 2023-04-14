@@ -63,6 +63,10 @@ $statemeent->rowcount() // to get number of rows affected by Query
  ```
  
  ---------------------------------------------------------------------------------------------------------
+ - $pdo-> prepare() : prepare a sql command : prepare($sql_command)
+ - $statement-> execute() : prepare method will not work without execute method. when we call prepare method, we have to call execute method after prepare method.
+ - $all_rows = statement-> fetchAll() : fetch all rows of a table
+ - 
  ## pdo crud in secure way
  
  #### read all rows
